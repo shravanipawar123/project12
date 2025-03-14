@@ -42,7 +42,7 @@ export default function HODLogin() {
     try {
       //localStorage.setItem("access_token", response.data.token);
       //localStorage.setItem("guideId", response.data.guideId);
-      if (email === "admin@gmail.com" && password === "admin@123") {
+      if (payload.email === "admin@gmail.com" && payload.password === "admin@123") {
         localStorage.setItem("isAuthHOD", true);
         toast({
           title: `Admin Logged in Successfully`,
